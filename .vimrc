@@ -11,12 +11,14 @@ Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Bundle 'edkolev/tmuxline.vim'
+Plugin 'tpope/vim-fugitive'
 
 " The bundles you install will be listed here
 
 
 " Airline setup
-
+let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
 
 " The rest of your config follows here
 "
