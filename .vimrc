@@ -1,7 +1,8 @@
 set nocompatible
 set laststatus=2
+set t_Co=256
 
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " let Vundle manage Vundle
