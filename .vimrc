@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Bundle 'edkolev/tmuxline.vim'
 
 " The bundles you install will be listed here
 
