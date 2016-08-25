@@ -2,8 +2,8 @@ set nocompatible
 set laststatus=2
 set t_Co=256
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
@@ -15,7 +15,7 @@ Bundle 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
 
 " The bundles you install will be listed here
-
+call vundle#end()
 
 " Airline setup
 let g:airline_powerline_fonts = 1
