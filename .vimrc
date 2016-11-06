@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Bundle 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'pangloss/vim-javascript'
 
 " The bundles you install will be listed here
 call vundle#end()
@@ -29,7 +30,7 @@ set background=dark
 
 
 syntax on
-set noexpandtab
+set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
