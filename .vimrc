@@ -14,6 +14,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Bundle 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
+Plugin 'fatih/vim-go'
 
 " The bundles you install will be listed here
 call vundle#end()
