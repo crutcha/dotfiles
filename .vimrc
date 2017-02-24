@@ -15,6 +15,10 @@ Bundle 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'fatih/vim-go'
+Plugin 'jiangmiao/auto-pairs'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+
 
 " The bundles you install will be listed here
 call vundle#end()
@@ -22,6 +26,10 @@ call vundle#end()
 " Airline setup
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
+
+" make python pretty
+let python_highlight_all=1
+syntax on
 
 " The rest of your config follows here
 "
