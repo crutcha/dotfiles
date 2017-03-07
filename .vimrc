@@ -16,9 +16,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
-Bundle 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-
+Plugin 'dodie/vim-disapprove-deep-indentation'
 
 " The bundles you install will be listed here
 call vundle#end()
