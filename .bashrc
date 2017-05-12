@@ -5,6 +5,19 @@ CYAN="\[\e[00;36m\]"
 WHITE="\[\e[00;37m\]"
 RESET="\[\e[0m\]"
 
+# virtualenv
+venv() {
+    if [[ $VIRTUAL_ENV != ""  ]]
+        then
+          # Strip out the path and just leave the env name
+          venv="${CYAN}(${VIRTUAL_ENV##*/}) "
+    else
+          # In case you don't have one activated
+          venv=''
+    fi
+    echo "${venv}"
+}
+
 git_status() {
     STATUS=$(git status 2> /dev/null )
 
@@ -45,6 +58,10 @@ user_and_host() {
 
 }
 
+user_only () {
+    echo "${GREEN}\u${RESET}"
+}
+
 colon_seperator() {
     echo "${CWHITE}:${RESET}"
 
@@ -62,7 +79,7 @@ divider() {
 
 # Legacy: PS1="$(tid) $(user_and_host)$(working_dir)$(git_branch) $(divider) "
 make_dat_ps1() {
-    PS1="$(user_and_host)$(working_dir)$(git_branch) $(divider) "
+    PS1="$(user_and_host)$(working_dir)$(git_branch) $(venv) $(divider) "
 
 }
 
@@ -84,3 +101,8 @@ alias tmns='tmux new -s'
 alias tmas='tmux attach-session -t'
 alias tmls='tmux list-session'
 alias tmks='tmux kill-session -t'
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
