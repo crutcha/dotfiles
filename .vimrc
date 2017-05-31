@@ -30,6 +30,10 @@ let g:Powerline_symbols = 'fancy'
 let python_highlight_all=1
 syntax on
 
+" disable pep8 validation in syntastic
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_flake8_args='--ignore=E501,E225 --max-complexity 10'
+
 " The rest of your config follows here
 "
 

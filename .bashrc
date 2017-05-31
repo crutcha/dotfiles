@@ -101,6 +101,7 @@ alias tmns='tmux new -s'
 alias tmas='tmux attach-session -t'
 alias tmls='tmux list-session'
 alias tmks='tmux kill-session -t'
+alias gitd='git diff --color | diff-so-fancy'
 
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
