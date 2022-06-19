@@ -17,7 +17,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/syntastic'
-Plugin 'dodie/vim-disapprove-deep-indentation'
+Plugin 'ycm-core/YouCompleteMe'
 
 " The bundles you install will be listed here
 call vundle#end()
@@ -47,3 +47,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set textwidth=0
+
+" vim-go auto go fmt on save wont work without this
+filetype plugin indent on
